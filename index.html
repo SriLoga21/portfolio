@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Loga Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3e1e31f3d5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full stack Developer</p>
+            <h1>Hi, I'm <span>Sri Loga</span> <br>from India</h1>
+        </div>
+    </div>
+</div>
+<!--About-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/about .jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As a recent graduate, I am eager to embark on a successful career in Software Developer.
+                   My academic coursework and extracurricular experiences have equipped me with a strong foundation in Python,
+                   including HTML, CSS, Javascript, MySQL. I am a quick learner, highly adaptable, and committed to continuous growth and improvement.
+                   I am excited about the opportunity to contribute my passion and enthusiasm to a dynamic team and make a positive impact.</p>
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                    <!-- <p class="tab-links"onclick="opentab('experience')">Experience</p> -->
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Frontend</span><br>HTML<br>CSS<br>Bootstrap<br>Javascript<br>React.js</li>
+                        <li><span>Backend</span><br>Python</li>
+                        <li><span>Database</span><br>MySQL</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"id='education'>
+                    <ul>
+                        <li><span>Bachelors in Engineering</span><br>
+                           Electronics and Communication Engineering<br>
+                            Vivekanandha College of Technology for Women, Tiruchengode, Namakkal.<br>
+                            Anna University<br>
+                            CGPA: 8.12<br>
+                            Year of Passing: 2022 
+                            
+                        </li>
+                        <li><span>HSC</span><br>
+                            School: Sarah Tucker Higher Secondary School, Palayamkottai, Tirunelveli.<br>
+                            Percentage: 60.67<br>
+                            Year of Passing: 2018
+                        </li>
+                        <li><span>SSLC</span><br>
+                            School: Sarah Tucker Higher Secondary School, Palayamkottai, Tirunelveli.<br>
+                            Percentage: 90.8<br>
+                            Year of Passing: 2016
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="tab-contents"id='experience'>
+                    <p style="color: aliceblue;">I'm a recent graduate with a Bachelor's degree in Electronics and Communication Engineering from Anna University.
+                        During my academic journey, I focused on building a strong foundation in Python. I also had the opportunity to work on project which was Air Canvas.
+                        Additionally, I completed a Course at Besant Technologies, where I gained valuable knowledge in Python, HTML, CSS, Javascript, React and MySQL
+                        and had the chance to apply my knowledge in a real-world setting. My educational background, coupled with my passion for IT Fiels, 
+                        has prepared me to quickly adapt and contribute effectively to your team. I'm eager to continue learning and growing in this dynamic field.</p>
+                </div>    -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+<!--Portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/E-commerce pic">
+                <div class="layer">
+                    <h3>E-Commerce website</h3>
+                    <p></p>
+                    <a href="https://sriloga21.github.io/e-commerce-website/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+        
+            </div>
+            <!-- <div class="work">
+                <img src="Images/calc">
+                <div class="layer">
+                    <h3>Calculator app</h3>
+                    <p></p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div> -->
+            <div class="work">
+                <img src="Images/R.jpeg">
+                <div class="layer">
+                    <h3>Spotify</h3>
+                    <p></p>
+                    <a href="https://sriloga21.github.io/spotify-app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="" class="btn">See more</a> -->
+    </div>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>sriloga8@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9486476484</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sri-loga-g-021ba8220/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/SriLoga21"><i class="fab fa-github"></i></a>
+                    
+
+                </div>
+                <button type="button"><a href="Resume/Sri Loga G.pdf" id="cv" download>Download CV</a></button>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message here"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sri Loga. Made for <i class="fa-solid fa-heart"></i> Personal Portfolio</p>
+    </div>
+</div>  
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------ -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzs3J4ic_MsoV4aa48kzLeJdvm-XTalTq3DmJfX5dC9xEMJpNOJ2AKMtF4m67-7cZUK/exec';
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script> 
+</body>  
+</html>
+
